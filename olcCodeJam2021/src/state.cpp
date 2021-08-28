@@ -10,4 +10,4 @@ void State::SetCurrentState(State::States current) noexcept
 	current = current;
 }
 
-//State::States current = State::States::MENU;
+State::States State::current = State::States::MENU;
