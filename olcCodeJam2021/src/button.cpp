@@ -1,6 +1,8 @@
 #include "button.h"
 #include "utils.h"
 
+Button::Button() = default;
+
 Button::Button(const olc::vf2d& position, const std::string& text, olc::Decal* decal, State::States state) :
 	position{ position },
 	decal{ decal },

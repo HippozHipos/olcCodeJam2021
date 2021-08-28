@@ -5,7 +5,7 @@
 class Button
 {
 public:
-	Button() = default;
+	Button();
 	Button(const olc::vf2d& position, const std::string& text, olc::Decal* sprite, State::States state);
 
 public:

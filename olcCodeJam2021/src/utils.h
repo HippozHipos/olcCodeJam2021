@@ -1,4 +1,3 @@
-
 #pragma once
 #include "olcPixelGameEngine.h"
 
@@ -11,3 +10,8 @@ inline bool mouseInRect(const olc::vf2d& mouse, const olc::vf2d& pos, const olc:
 		return true;
 	return false;
 }
+
+struct constants
+{
+	static constexpr float PI = 3.141592653589793238462643383f;
+};

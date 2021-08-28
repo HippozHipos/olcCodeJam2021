@@ -140,16 +140,24 @@
   </ItemDefinitionGroup>
   <ItemGroup>
     <ClCompile Include="src\button.cpp" />
+    <ClCompile Include="src\homePage.cpp" />
     <ClCompile Include="src\main.cpp" />
     <ClCompile Include="src\renderer.cpp" />
+    <ClCompile Include="src\resource.cpp" />
+    <ClCompile Include="src\slimeAnimation.cpp" />
     <ClCompile Include="src\state.cpp" />
+    <ClCompile Include="src\ui.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="src\button.h" />
+    <ClInclude Include="src\homePage.h" />
     <ClInclude Include="src\olcPixelGameEngine.h" />
     <ClInclude Include="src\pixelGameEngine.h" />
     <ClInclude Include="src\renderer.h" />
+    <ClInclude Include="src\resource.h" />
+    <ClInclude Include="src\slimeAnimation.h" />
     <ClInclude Include="src\state.h" />
+    <ClInclude Include="src\ui.h" />
     <ClInclude Include="src\utils.h" />
   </ItemGroup>
   <ItemGroup>
