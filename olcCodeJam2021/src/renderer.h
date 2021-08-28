@@ -3,7 +3,6 @@
 #include "button.h"
 #include "utils.h"
 
-void DrawButton(olc::PixelGameEngine* pge, Button& button) noexcept
-{
-	pge->DrawDecal(button.position, button.GetDecal());
-}
+void DrawButton(olc::PixelGameEngine* pge, Button& button) noexcept;
+void DrawButtonText(olc::PixelGameEngine* pge, Button& button) noexcept;
+
