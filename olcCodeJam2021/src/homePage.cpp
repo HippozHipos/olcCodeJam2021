@@ -17,7 +17,7 @@ void HomePageNonInteractive::DrawWalls(olc::PixelGameEngine* pge, olc::Decal* sp
 
 void HomePageNonInteractive::DrawAboutString(olc::PixelGameEngine* pge) const noexcept
 {
-	pge->DrawStringDecal({ 50.0f, 430.0f }, "OlcCodeJam 2021 Entry\n\n    - Time Lag -", { 101, 67, 33 }, { 3.0f, 3.0f });
+	pge->DrawStringDecal({ 50.0f, 430.0f }, "OlcCodeJam 2021 Entry\n\n    - Time Lag -", { 201, 167, 133 }, { 3.0f, 3.0f });
 }
 
 HomePageInteractive::HomePageInteractive() = default;
@@ -33,7 +33,7 @@ void HomePageInteractive::DrawButtons(olc::PixelGameEngine* pge) noexcept
 	DrawButton(pge, ui.aboutButton);
 }
 
-void HomePageInteractive::ExecuteButtonFunctionOnClick(olc::PixelGameEngine* pge) const noexcept
+void HomePageInteractive::ExecuteButtonFunctionOnClick(olc::PixelGameEngine* pge) noexcept
 {
 	ui.aboutButton.ChangeStateOnClick(pge);
 	ui.startGameButton.ChangeStateOnClick(pge);

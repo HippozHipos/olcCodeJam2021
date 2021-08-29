@@ -22,10 +22,11 @@ public:
 	bool Clicked(const olc::PixelGameEngine* const pge) const noexcept;
 	bool Held(const olc::PixelGameEngine* const pge) const noexcept;
 	const std::string& GetText() const noexcept;
-	void ChangeStateOnClick(const olc::PixelGameEngine* const pge) const noexcept;
+	void ChangeStateOnClick(const olc::PixelGameEngine* const pge) noexcept;
 
 private:
 	olc::Decal* decal{};
 	State::States state{};
 	std::string text{};
+	bool change = false;
 };

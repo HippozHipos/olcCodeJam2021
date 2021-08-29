@@ -21,27 +21,33 @@ public:
 
 	bool OnUserUpdate(float elapsedTime) override
 	{
-		Clear({ 255,228,196 });
-		SetPixelMode(olc::Pixel::MASK);
+		//Clear({ 255,228,196 });
 
 		switch (State::GetCurrentState())
 		{
 		case State::States::MENU:
 		{
+			DrawDecal({ 0.0f, 0.0f }, spriteSheets.GetMenuBackgroundDecal());
+			SetPixelMode(olc::Pixel::MASK);
 			homePage.Run(this, elapsedTime, spriteSheets.GetSlimeDecal(), spriteSheets.GetWallDecal());
 			break;
 		}
 		case State::States::PLAY:
 		{
+			DrawDecal({ 0.0f, 0.0f }, spriteSheets.GetGameBackgroundDecal());
+			SetPixelMode(olc::Pixel::MASK);
 			break;
 		}
 		case State::States::ABOUTPAGE:
 		{
-			std::cout << "home\n";
+			DrawDecal({ 0.0f, 0.0f }, spriteSheets.GetGameBackgroundDecal());
+			SetPixelMode(olc::Pixel::MASK);
 			break;
 		}
 		case State::States::DIALOUGE:
 		{
+			DrawDecal({ 0.0f, 0.0f }, spriteSheets.GetGameBackgroundDecal());
+			SetPixelMode(olc::Pixel::MASK);
 			break;
 		}
 		}

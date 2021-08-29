@@ -27,7 +27,7 @@ public:
 public:
 	void Init(olc::Decal* spriteSheet) noexcept;
 	void DrawButtons(olc::PixelGameEngine* pge) noexcept;
-	void ExecuteButtonFunctionOnClick(olc::PixelGameEngine* pge) const noexcept;
+	void ExecuteButtonFunctionOnClick(olc::PixelGameEngine* pge) noexcept;
 
 private:
 	Ui ui{};

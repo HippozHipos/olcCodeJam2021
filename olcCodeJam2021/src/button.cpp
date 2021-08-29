@@ -48,10 +48,12 @@ const std::string& Button::GetText() const noexcept
 	return text;
 }
 
-void Button::ChangeStateOnClick(const olc::PixelGameEngine* const pge) const noexcept
-{
-	if (Clicked(pge))
+void Button::ChangeStateOnClick(const olc::PixelGameEngine* const pge) noexcept
+{	
+	change |= Clicked(pge);
+	if (change && MouseOverButton(pge) && pge->GetMouse(0).bReleased)
 	{
+		change = false;
 		State::SetCurrentState(state);
 	}
 }

@@ -39,6 +39,12 @@
     <ClCompile Include="src\homePage.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="src\dialouge.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="src\script.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="src\pixelGameEngine.h">
@@ -71,6 +77,12 @@
     <ClInclude Include="src\homePage.h">
       <Filter>Header Files</Filter>
     </ClInclude>
+    <ClInclude Include="src\dialogue.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="src\script.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <Image Include="resources\button sprite sheet.png">
@@ -80,6 +92,18 @@
       <Filter>Resource Files</Filter>
     </Image>
     <Image Include="resources\walls.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="resources\wall sprite.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="resources\background sprite.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="resources\dialouge box sprite sheet.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="resources\gbackground sprite.png">
       <Filter>Resource Files</Filter>
     </Image>
   </ItemGroup>
