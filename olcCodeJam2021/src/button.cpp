@@ -48,7 +48,10 @@ const std::string& Button::GetText() const noexcept
 	return text;
 }
 
-void Button::ChangeStateOnClick() const noexcept
+void Button::ChangeStateOnClick(const olc::PixelGameEngine* const pge) const noexcept
 {
-	State::SetCurrentState(state);
+	if (Clicked(pge))
+	{
+		State::SetCurrentState(state);
+	}
 }

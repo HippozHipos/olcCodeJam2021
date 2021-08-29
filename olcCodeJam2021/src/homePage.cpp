@@ -33,10 +33,10 @@ void HomePageInteractive::DrawButtons(olc::PixelGameEngine* pge) noexcept
 	DrawButton(pge, ui.aboutButton);
 }
 
-void HomePageInteractive::ExecuteButtonFunctionOnClick() const noexcept
+void HomePageInteractive::ExecuteButtonFunctionOnClick(olc::PixelGameEngine* pge) const noexcept
 {
-	ui.aboutButton.ChangeStateOnClick();
-	ui.startGameButton.ChangeStateOnClick();
+	ui.aboutButton.ChangeStateOnClick(pge);
+	ui.startGameButton.ChangeStateOnClick(pge);
 }
 
 HomePage::HomePage() = default;
@@ -49,7 +49,7 @@ void HomePage::Init(olc::Decal* spriteSheet) noexcept
 void HomePage::Run(olc::PixelGameEngine* pge, float elapsedTime, olc::Decal* slimeSpriteSheet, olc::Decal* wallSprite) noexcept
 {
 	interactive.DrawButtons(pge);
-	interactive.ExecuteButtonFunctionOnClick();
+	interactive.ExecuteButtonFunctionOnClick(pge);
 	nonInteractive.DoSlimeAnimation(pge, elapsedTime, slimeSpriteSheet);
 	nonInteractive.DrawWalls(pge, wallSprite);
 	nonInteractive.DrawAboutString(pge);

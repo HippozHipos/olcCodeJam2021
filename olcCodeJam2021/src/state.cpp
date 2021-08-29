@@ -5,9 +5,9 @@ const State::States& State::GetCurrentState() noexcept
 	return current;
 }
 
-void State::SetCurrentState(State::States current) noexcept
+void State::SetCurrentState(State::States toState) noexcept
 {
-	current = current;
+	current = toState;
 }
 
 State::States State::current = State::States::MENU;

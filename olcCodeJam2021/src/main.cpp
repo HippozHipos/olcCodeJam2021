@@ -2,6 +2,7 @@
 #include "olcPixelGameEngine.h"
 #include "homePage.h"
 #include "resource.h"
+#include "state.h"
 
 class Application : public olc::PixelGameEngine
 {
@@ -22,8 +23,28 @@ public:
 	{
 		Clear({ 255,228,196 });
 		SetPixelMode(olc::Pixel::MASK);
-		homePage.Run(this, elapsedTime, spriteSheets.GetSlimeDecal(), spriteSheets.GetWallDecal());
-		
+
+		switch (State::GetCurrentState())
+		{
+		case State::States::MENU:
+		{
+			homePage.Run(this, elapsedTime, spriteSheets.GetSlimeDecal(), spriteSheets.GetWallDecal());
+			break;
+		}
+		case State::States::PLAY:
+		{
+			break;
+		}
+		case State::States::ABOUTPAGE:
+		{
+			std::cout << "home\n";
+			break;
+		}
+		case State::States::DIALOUGE:
+		{
+			break;
+		}
+		}
 		return true;
 	}
 

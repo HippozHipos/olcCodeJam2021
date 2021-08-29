@@ -22,7 +22,7 @@ public:
 	bool Clicked(const olc::PixelGameEngine* const pge) const noexcept;
 	bool Held(const olc::PixelGameEngine* const pge) const noexcept;
 	const std::string& GetText() const noexcept;
-	void ChangeStateOnClick() const noexcept;
+	void ChangeStateOnClick(const olc::PixelGameEngine* const pge) const noexcept;
 
 private:
 	olc::Decal* decal{};
