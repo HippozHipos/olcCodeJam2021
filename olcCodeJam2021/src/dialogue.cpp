@@ -46,6 +46,7 @@ Dialouge::Dialouge() = default;
 
 bool Dialouge::GloosTurn() const noexcept
 {
+	//7 is the last time gloo speaks
 	if ((int)manager.GetCurrentDialouge() < 8)
 	{
 		return !(manager.GetCurrentDialouge() % 2 == 0);
