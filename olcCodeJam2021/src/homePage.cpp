@@ -4,7 +4,7 @@ HomePageNonInteractive::HomePageNonInteractive() = default;
 
 void HomePageNonInteractive::DoSlimeAnimation(olc::PixelGameEngine* pge, float elapsedTime, olc::Decal* spriteSheet) noexcept
 {
-	SlimeAnimation::PartialDecalInfo info = animation.GetPartialDecalInfo(elapsedTime, 15.0f, true);
+	SlimeAnimation::PartialDecalInfo info = animation.GetPartialDecalInfo(elapsedTime, 15.0f, SlimeAnimation::Type::EYES);
 	DrawSlimeAnimation(pge, { 230.0f, 90.0f }, spriteSheet, info, { 2.0f, 2.0f });
 }
 

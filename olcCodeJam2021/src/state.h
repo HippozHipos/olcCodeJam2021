@@ -5,7 +5,7 @@ class State
 public:
 	enum class States
 	{
-		MENU, PLAY, ABOUTPAGE, DIALOUGE
+		MENU, PLAY, ABOUTPAGE, INTRO
 	};
 
 	static const States& GetCurrentState() noexcept;

@@ -34,4 +34,16 @@ void DrawWall(olc::PixelGameEngine* pge, const olc::vf2d& pos, olc::Decal* sprit
 	pge->DrawRotatedDecal(pos, sprite, angle, centre, scale);
 }
 
+void DrawDialougeBox(float x, olc::PixelGameEngine* pge, olc::Decal* spriteSheet, bool glooSpeaking)
+{
+	float y = glooSpeaking ? 200.0f: 0.0f;
+	pge->DrawPartialDecal({ x, 400.0f }, spriteSheet, { 0.0f, y }, { 600.0f, 200.0f });
+}
+
+void DrawDialougeBoxText(olc::PixelGameEngine* pge, const std::string& text)
+{
+	pge->DrawStringDecal({ 40.0f , 430.0f }, text, { 88, 88, 88 }, { 1.5f, 2.5f });
+}
+
+
 

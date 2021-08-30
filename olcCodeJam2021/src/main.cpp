@@ -2,6 +2,7 @@
 #include "olcPixelGameEngine.h"
 #include "homePage.h"
 #include "resource.h"
+#include "dialogue.h"
 #include "state.h"
 
 class Application : public olc::PixelGameEngine
@@ -32,6 +33,13 @@ public:
 			homePage.Run(this, elapsedTime, spriteSheets.GetSlimeDecal(), spriteSheets.GetWallDecal());
 			break;
 		}
+		case State::States::INTRO:
+		{
+			DrawDecal({ 0.0f, 0.0f }, spriteSheets.GetGameBackgroundDecal());
+			SetPixelMode(olc::Pixel::MASK);
+			dialouge.Run(this, spriteSheets.GetSlimeDecal(), spriteSheets.GetDialougeBoxDecal());
+			break;
+		}
 		case State::States::PLAY:
 		{
 			DrawDecal({ 0.0f, 0.0f }, spriteSheets.GetGameBackgroundDecal());
@@ -44,12 +52,6 @@ public:
 			SetPixelMode(olc::Pixel::MASK);
 			break;
 		}
-		case State::States::DIALOUGE:
-		{
-			DrawDecal({ 0.0f, 0.0f }, spriteSheets.GetGameBackgroundDecal());
-			SetPixelMode(olc::Pixel::MASK);
-			break;
-		}
 		}
 		return true;
 	}
@@ -57,6 +59,8 @@ public:
 private:
 	HomePage homePage{};
 	SpriteSheets spriteSheets{};
+	Dialouge dialouge{};
+	Script script{};
 };
 
 int main()

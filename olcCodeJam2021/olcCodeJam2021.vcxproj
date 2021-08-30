@@ -140,6 +140,7 @@
   </ItemDefinitionGroup>
   <ItemGroup>
     <ClCompile Include="src\button.cpp" />
+    <ClCompile Include="src\dialogue.cpp" />
     <ClCompile Include="src\dialouge.cpp" />
     <ClCompile Include="src\homePage.cpp" />
     <ClCompile Include="src\main.cpp" />
@@ -148,6 +149,7 @@
     <ClCompile Include="src\script.cpp" />
     <ClCompile Include="src\slimeAnimation.cpp" />
     <ClCompile Include="src\state.cpp" />
+    <ClCompile Include="src\timer.cpp" />
     <ClCompile Include="src\ui.cpp" />
   </ItemGroup>
   <ItemGroup>
@@ -161,6 +163,7 @@
     <ClInclude Include="src\script.h" />
     <ClInclude Include="src\slimeAnimation.h" />
     <ClInclude Include="src\state.h" />
+    <ClInclude Include="src\timer.h" />
     <ClInclude Include="src\ui.h" />
     <ClInclude Include="src\utils.h" />
   </ItemGroup>
