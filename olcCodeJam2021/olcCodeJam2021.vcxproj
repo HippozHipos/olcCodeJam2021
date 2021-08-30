@@ -142,7 +142,6 @@
     <ClCompile Include="src\application.cpp" />
     <ClCompile Include="src\button.cpp" />
     <ClCompile Include="src\dialogue.cpp" />
-    <ClCompile Include="src\dialouge.cpp" />
     <ClCompile Include="src\homePage.cpp" />
     <ClCompile Include="src\main.cpp" />
     <ClCompile Include="src\renderer.cpp" />
