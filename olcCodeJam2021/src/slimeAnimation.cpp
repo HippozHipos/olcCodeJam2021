@@ -11,6 +11,7 @@ SlimeAnimation::PartialDecalInfo::PartialDecalInfo(Type type, int x) :
 	case Type::NOEYES: y = 200; break;
 	case Type::EYESLEFT: y = 17; break;
 	case Type::EYESRIGHT: y = 81; break;
+	case Type::RED: y = 250; break;
 	}
 }
 

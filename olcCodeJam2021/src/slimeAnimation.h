@@ -7,7 +7,7 @@ public:
 	SlimeAnimation();
 	enum class Type
 	{
-		NOEYES, EYES, EYESLEFT, EYESRIGHT
+		NOEYES, EYES, EYESLEFT, EYESRIGHT, RED
 	};
 
 	struct PartialDecalInfo

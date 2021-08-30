@@ -12,3 +12,8 @@ public:
 private:
 	std::unique_ptr<Character> player;
 };
+
+class EnemyCreator
+{
+
+};
