@@ -1,7 +1,7 @@
 Copyright/Attribution Notice for the slime sprite sheet: 
 Richard Lewis (AKA simulatoralive) https://simulatoralive.itch.io/bigblockengine
 
-Copyright License for the entire application
+Copyright License for Time Lag
 
 	Redistribution and use in source and binary forms, with or without modification,
 	are permitted provided that the following conditions are met:
