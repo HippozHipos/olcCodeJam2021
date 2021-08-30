@@ -147,6 +147,8 @@
     <ClCompile Include="src\dialogue.cpp" />
     <ClCompile Include="src\game.cpp" />
     <ClCompile Include="src\homePage.cpp" />
+    <ClCompile Include="src\levelManager.cpp" />
+    <ClCompile Include="src\levels.cpp" />
     <ClCompile Include="src\main.cpp" />
     <ClCompile Include="src\renderer.cpp" />
     <ClCompile Include="src\resource.cpp" />
@@ -165,6 +167,8 @@
     <ClInclude Include="src\dialogue.h" />
     <ClInclude Include="src\game.h" />
     <ClInclude Include="src\homePage.h" />
+    <ClInclude Include="src\levelManager.h" />
+    <ClInclude Include="src\levels.h" />
     <ClInclude Include="src\olcPixelGameEngine.h" />
     <ClInclude Include="src\pixelGameEngine.h" />
     <ClInclude Include="src\renderer.h" />

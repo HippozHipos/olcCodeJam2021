@@ -1,6 +1,7 @@
 #pragma once
 #include "character.h"
 #include "characterCreator.h"
+#include "levelManager.h"
 
 class Game
 {
@@ -16,4 +17,5 @@ private:
 private:
 	Character& player;
 	PlayerCreator playerCreator{};
+	LevelManager levelManager{};
 };

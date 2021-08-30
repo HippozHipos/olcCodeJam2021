@@ -10,9 +10,11 @@ void Game::Run(olc::PixelGameEngine* pge) noexcept
 {
 	player.DoSlimeAnimation(pge);
 	player.RunController(pge);
+	levelManager.Run(pge);
 }
 
 void Game::Init(olc::Decal* spriteSheet)
 {
 	player.Init(spriteSheet);
+	levelManager.Init(spriteSheet);
 }
