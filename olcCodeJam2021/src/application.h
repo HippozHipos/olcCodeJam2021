@@ -4,6 +4,7 @@
 #include "resource.h"
 #include "dialogue.h"
 #include "state.h"
+#include "game.h"
 
 class Application : public olc::PixelGameEngine
 {
@@ -19,4 +20,5 @@ private:
 	SpriteSheets spriteSheets{};
 	Dialouge dialouge{};
 	Script script{};
+	Game game{};
 };

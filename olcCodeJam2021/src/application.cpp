@@ -7,6 +7,7 @@ bool Application::OnUserCreate()
 	spriteSheets.Load();
 	spriteSheets.MakeDecalsFromSprites();
 	homePage.Init(spriteSheets.GetButtonDecal());
+	game.Init(spriteSheets.GetSlimeDecal());
 	return true;
 }
 
@@ -32,6 +33,7 @@ bool Application::OnUserUpdate(float elapsedTime)
 	{
 		DrawDecal({ 0.0f, 0.0f }, spriteSheets.GetGameBackgroundDecal());
 		SetPixelMode(olc::Pixel::MASK);
+		game.Run(this);
 		break;
 	}
 	case State::States::ABOUTPAGE:

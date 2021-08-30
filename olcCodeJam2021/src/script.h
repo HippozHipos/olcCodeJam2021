@@ -2,9 +2,6 @@
 #include <vector>
 #include <string>
 
-//gloo = player
-//s = simulator
-
 struct Script
 {
 public:

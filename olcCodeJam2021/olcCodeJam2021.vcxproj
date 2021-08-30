@@ -141,7 +141,11 @@
   <ItemGroup>
     <ClCompile Include="src\application.cpp" />
     <ClCompile Include="src\button.cpp" />
+    <ClCompile Include="src\character.cpp" />
+    <ClCompile Include="src\characterCreator.cpp" />
+    <ClCompile Include="src\controller.cpp" />
     <ClCompile Include="src\dialogue.cpp" />
+    <ClCompile Include="src\game.cpp" />
     <ClCompile Include="src\homePage.cpp" />
     <ClCompile Include="src\main.cpp" />
     <ClCompile Include="src\renderer.cpp" />
@@ -155,7 +159,11 @@
   <ItemGroup>
     <ClInclude Include="src\application.h" />
     <ClInclude Include="src\button.h" />
+    <ClInclude Include="src\character.h" />
+    <ClInclude Include="src\characterCreator.h" />
+    <ClInclude Include="src\controller.h" />
     <ClInclude Include="src\dialogue.h" />
+    <ClInclude Include="src\game.h" />
     <ClInclude Include="src\homePage.h" />
     <ClInclude Include="src\olcPixelGameEngine.h" />
     <ClInclude Include="src\pixelGameEngine.h" />

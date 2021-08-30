@@ -2,7 +2,6 @@
 
 SlimeAnimation::SlimeAnimation() = default;
 
-
 SlimeAnimation::PartialDecalInfo::PartialDecalInfo(Type type, int x) :
 	x{ x }
 {
