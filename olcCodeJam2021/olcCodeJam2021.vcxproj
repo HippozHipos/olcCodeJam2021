@@ -139,6 +139,7 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClCompile Include="src\application.cpp" />
     <ClCompile Include="src\button.cpp" />
     <ClCompile Include="src\dialogue.cpp" />
     <ClCompile Include="src\dialouge.cpp" />
@@ -153,6 +154,7 @@
     <ClCompile Include="src\ui.cpp" />
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="src\application.h" />
     <ClInclude Include="src\button.h" />
     <ClInclude Include="src\dialogue.h" />
     <ClInclude Include="src\homePage.h" />
