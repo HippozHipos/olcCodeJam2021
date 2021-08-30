@@ -8,7 +8,7 @@ Game::Game() :
 
 void Game::Run(olc::PixelGameEngine* pge) noexcept
 {
-	player.DoSlimeAnimation(pge);
+	player.DoSlimeAnimation(pge, SlimeAnimation::Type::NOEYES);
 	player.RunController(pge);
 	levelManager.Run(pge);
 }

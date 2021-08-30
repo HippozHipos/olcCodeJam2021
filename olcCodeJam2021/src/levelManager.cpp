@@ -19,7 +19,7 @@ void LevelRunner::Run(olc::PixelGameEngine* pge, const LevelInterface * level) n
 {
 	for (auto& enemy : level->GetLevelData().enemies)
 	{
-		enemy->DoSlimeAnimation(pge);
+		enemy->DoSlimeAnimation(pge, SlimeAnimation::Type::RED);
 		enemy->RunController(pge);
 	}
 }

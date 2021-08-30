@@ -13,7 +13,7 @@ public:
 
 public:
 	void Init(olc::Decal* spriteSheet) noexcept;
-	void DoSlimeAnimation(olc::PixelGameEngine* pge) noexcept;
+	void DoSlimeAnimation(olc::PixelGameEngine* pge, SlimeAnimation::Type slimeType) noexcept;
 	void RunController(olc::PixelGameEngine* pge) noexcept;
 
 public:

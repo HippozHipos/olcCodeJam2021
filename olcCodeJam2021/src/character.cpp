@@ -20,10 +20,10 @@ void Character::Init(olc::Decal* spriteSheet) noexcept
 	this->spriteSheet = spriteSheet;
 }
 
-void Character::DoSlimeAnimation(olc::PixelGameEngine* pge) noexcept
+void Character::DoSlimeAnimation(olc::PixelGameEngine* pge, SlimeAnimation::Type slimeType) noexcept
 {
 	assert(spriteSheet != nullptr && "Character class not initialised");
-	SlimeAnimation::PartialDecalInfo info = slimeAnimation.GetPartialDecalInfo(pge->GetElapsedTime(), 15, SlimeAnimation::Type::NOEYES);
+	SlimeAnimation::PartialDecalInfo info = slimeAnimation.GetPartialDecalInfo(pge->GetElapsedTime(), 15, slimeType);
 	DrawSlimeAnimation(pge, position, spriteSheet, info);
 }
 
