@@ -1,6 +1,4 @@
 #pragma once
-
-#define OLC_PGE_APPLICATION
 #include "olcPixelGameEngine.h"
 #include "homePage.h"
 #include "resource.h"

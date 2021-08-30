@@ -1,3 +1,4 @@
+#define OLC_PGE_APPLICATION
 #include "application.h"
 
 int main()

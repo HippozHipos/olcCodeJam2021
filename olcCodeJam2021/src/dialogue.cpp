@@ -44,6 +44,15 @@ olc::Pixel BlinkingColor::GetColor(olc::PixelGameEngine* pge, float speed) noexc
 
 Dialouge::Dialouge() = default;
 
+bool Dialouge::GloosTurn() const noexcept
+{
+	if ((int)manager.GetCurrentDialouge() < 8)
+	{
+		return !(manager.GetCurrentDialouge() % 2 == 0);
+	}
+	return false;
+}
+
 void Dialouge::Say(olc::PixelGameEngine* pge, olc::Decal* dialougeSpriteSheet) noexcept
 {
 	DrawDialougeBoxText(pge, script.GetScript()[manager.GetCurrentDialouge()]);
@@ -54,7 +63,7 @@ void Dialouge::DoSlimeAnimation(olc::PixelGameEngine* pge, olc::Decal* slimeSpri
 	if (GloosTurn())
 	{
 		SlimeAnimation::PartialDecalInfo info = slimeAnimation.GetPartialDecalInfo(pge->GetElapsedTime(), 15.0f, SlimeAnimation::Type::EYESLEFT);
-		DrawSlimeAnimation(pge, { 500.0f, 345.0f }, slimeSpriteSheet, info);
+		DrawSlimeAnimation(pge, { 500.0f, 370.0f }, slimeSpriteSheet, info);
 	}
 }
 
@@ -73,14 +82,5 @@ void Dialouge::Run(olc::PixelGameEngine* pge, olc::Decal* slimeSpriteSheet, olc:
 		Say(pge, dialougeSpriteSheet);
 		DoSlimeAnimation(pge, slimeSpriteSheet);
 	}
-}
-
-bool Dialouge::GloosTurn() const noexcept
-{
-	if ((int)manager.GetCurrentDialouge() < 8)
-	{
-		return !(manager.GetCurrentDialouge() % 2 == 0);
-	}
-	return false;
 }
 
