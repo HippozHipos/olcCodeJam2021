@@ -21,6 +21,8 @@ public:
 	olc::Decal* GetMenuBackgroundDecal() noexcept;
 	olc::Sprite* GetGameBackgroundSprite() noexcept;
 	olc::Decal* GetGameBackgroundDecal() noexcept;
+	olc::Sprite* GetBulletSprite() noexcept;
+	olc::Decal* GetBulletDecal() noexcept;
 
 private:
 	std::unique_ptr<olc::Sprite> buttonSprite = nullptr;
@@ -29,6 +31,7 @@ private:
 	std::unique_ptr<olc::Sprite> dialougeBoxSprite = nullptr;
 	std::unique_ptr<olc::Sprite> backgroundSprite = nullptr;
 	std::unique_ptr<olc::Sprite> gBackgroundSprite = nullptr; 
+	std::unique_ptr<olc::Sprite> bulletSprite = nullptr;
 
 	std::unique_ptr<olc::Decal> buttonDecal = nullptr;
 	std::unique_ptr<olc::Decal> slimeDecal = nullptr;
@@ -36,4 +39,5 @@ private:
 	std::unique_ptr<olc::Decal> dialougeBoxDecal = nullptr;
 	std::unique_ptr<olc::Decal> backgroundDecal = nullptr;
 	std::unique_ptr<olc::Decal> gBackgroundDecal = nullptr;
+	std::unique_ptr<olc::Decal> bulletDecal = nullptr;
 };

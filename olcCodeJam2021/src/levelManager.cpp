@@ -11,7 +11,7 @@ void LevelRunner::Init(olc::Decal * spriteSheet, const LevelInterface* level) no
 {
 	for (auto& enemy : level->GetLevelData().enemies)
 	{
-		enemy->Init(spriteSheet);
+		enemy->Init(spriteSheet, nullptr);
 	}
 }
 

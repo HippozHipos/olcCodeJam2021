@@ -45,5 +45,11 @@ void DrawDialougeBoxText(olc::PixelGameEngine* pge, const std::string& text)
 	pge->DrawStringDecal({ 40.0f , 430.0f }, text, { 88, 88, 88 }, { 1.5f, 2.5f });
 }
 
+void DrawBullet(const olc::vf2d& position, olc::PixelGameEngine* pge, olc::Decal* spriteSheet, bool playerAttacking)
+{
+	olc::vf2d sourcePos = playerAttacking ? olc::vf2d{ 0.0f, 0.0f } : olc::vf2d{ 8.0f, 0.0f };
+	pge->DrawPartialDecal(position, spriteSheet, sourcePos, { 8.0f, 15.0f });
+}
+
 
 

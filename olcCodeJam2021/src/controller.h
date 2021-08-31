@@ -20,7 +20,7 @@ public:
 	void Control(olc::PixelGameEngine* pge, Character& character) override;
 
 private:
-	float speed = 150.0f;
+	float speed = 200.0f;
 };
 
 class BackAndForthController : public ControllerInterface

@@ -13,4 +13,5 @@ void DrawWall(olc::PixelGameEngine* pge, const olc::vf2d& pos, olc::Decal* sprit
 	float angle, const olc::vf2d& centre = { 45.0f, 11.5f }, const olc::vf2d & scale = { 1.8f, 1.8f });
 void DrawDialougeBox(float x, olc::PixelGameEngine* pge, olc::Decal* spriteSheet, bool glooSpeaking);
 void DrawDialougeBoxText(olc::PixelGameEngine* pge, const std::string& text);
+void DrawBullet(const olc::vf2d& position, olc::PixelGameEngine* pge, olc::Decal* spriteSheet, bool playerAttacking);
 

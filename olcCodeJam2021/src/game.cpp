@@ -8,13 +8,14 @@ Game::Game() :
 
 void Game::Run(olc::PixelGameEngine* pge) noexcept
 {
+	levelManager.Run(pge);
 	player.DoSlimeAnimation(pge, SlimeAnimation::Type::NOEYES);
 	player.RunController(pge);
-	levelManager.Run(pge);
+	player.RunAttacker(pge);
 }
 
-void Game::Init(olc::Decal* spriteSheet)
+void Game::Init(olc::Decal* slimeSpriteSheet, olc::Decal* bulletSpriteSheet)
 {
-	player.Init(spriteSheet);
-	levelManager.Init(spriteSheet);
+	player.Init(slimeSpriteSheet, bulletSpriteSheet);
+	levelManager.Init(slimeSpriteSheet);
 }

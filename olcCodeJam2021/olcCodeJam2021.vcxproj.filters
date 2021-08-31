@@ -69,6 +69,9 @@
     <ClCompile Include="src\levelManager.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="src\attacker.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="src\pixelGameEngine.h">
@@ -131,6 +134,9 @@
     <ClInclude Include="src\levelManager.h">
       <Filter>Header Files</Filter>
     </ClInclude>
+    <ClInclude Include="src\attacker.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <Image Include="resources\button sprite sheet.png">
@@ -152,6 +158,9 @@
       <Filter>Resource Files</Filter>
     </Image>
     <Image Include="resources\gbackground sprite.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="resources\bullet sprite sheet.png">
       <Filter>Resource Files</Filter>
     </Image>
   </ItemGroup>

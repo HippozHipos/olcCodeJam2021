@@ -8,6 +8,7 @@ void SpriteSheets::Load() noexcept
 	dialougeBoxSprite = std::make_unique<olc::Sprite>("resources\\dialouge box sprite sheet.png");
 	backgroundSprite = std::make_unique<olc::Sprite>("resources\\background sprite.png");
 	gBackgroundSprite = std::make_unique<olc::Sprite>("resources\\gbackground sprite.png");
+	bulletSprite = std::make_unique<olc::Sprite>("resources\\bullet sprite sheet.png");
 }
 
 void SpriteSheets::MakeDecalsFromSprites() noexcept
@@ -18,6 +19,7 @@ void SpriteSheets::MakeDecalsFromSprites() noexcept
 	dialougeBoxDecal = std::make_unique<olc::Decal>(dialougeBoxSprite.get());
 	backgroundDecal = std::make_unique<olc::Decal>(backgroundSprite.get());
 	gBackgroundDecal = std::make_unique<olc::Decal>(gBackgroundSprite.get());
+	bulletDecal = std::make_unique<olc::Decal>(bulletSprite.get());
 }
 
 olc::Sprite* SpriteSheets::GetButtonSprite() noexcept
@@ -78,5 +80,15 @@ olc::Sprite* SpriteSheets::GetGameBackgroundSprite() noexcept
 olc::Decal* SpriteSheets::GetGameBackgroundDecal() noexcept
 {
 	return gBackgroundDecal.get();
+}
+
+olc::Sprite* SpriteSheets::GetBulletSprite() noexcept
+{
+	return bulletSprite.get();
+}
+
+olc::Decal* SpriteSheets::GetBulletDecal() noexcept
+{
+	return bulletDecal.get();
 }
 

@@ -14,10 +14,10 @@ void PlayerController::Control(olc::PixelGameEngine* pge, Character& character)
 }
 
 BackAndForthController::BackAndForthController(const olc::vf2d& p1, const olc::vf2d& p2) :
-	p1{ p1 }, p2{ p2 }
+	p1{ p1 }, p2{ p2 },
+	unitDir{ (p2 - p1).norm() },
+	totalDistance{ std::hypot(p1.x - p2.x, p1.y - p2.y) }
 {
-	unitDir = (p2 - p1).norm();
-	totalDistance = std::hypot(p1.x - p2.x, p1.y - p2.y);
 }
 
 void BackAndForthController::Control(olc::PixelGameEngine* pge, Character& character)

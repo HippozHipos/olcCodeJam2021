@@ -7,7 +7,7 @@ bool Application::OnUserCreate()
 	spriteSheets.Load();
 	spriteSheets.MakeDecalsFromSprites();
 	homePage.Init(spriteSheets.GetButtonDecal());
-	game.Init(spriteSheets.GetSlimeDecal());
+	game.Init(spriteSheets.GetSlimeDecal(), spriteSheets.GetBulletDecal());
 	return true;
 }
 

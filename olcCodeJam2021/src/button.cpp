@@ -18,7 +18,7 @@ olc::Decal* Button::GetDecal() const noexcept
 
 bool Button::MouseOverButton(const olc::PixelGameEngine* const pge) const noexcept
 {
-	if (mouseInRect((olc::vf2d)pge->GetMousePos(), position, size))
+	if (pointInRect((olc::vf2d)pge->GetMousePos(), position, size))
 	{
 		return true;
 	}

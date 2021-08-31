@@ -1,6 +1,5 @@
 #pragma once
 #include "character.h"
-#include "controller.h"
 #include "olcPixelGameEngine.h"
 
 class PlayerCreator
